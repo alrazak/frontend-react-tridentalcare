@@ -9,6 +9,20 @@ function App() {
         <div>
             <Header />
                 <div className="container my-5">
+                    <div className="photo-grid mb-4">
+                        <div className="photo-item">
+                            <img src="/image1.jpg" alt="Photo 1" className="photo" />
+                            <p className="photo-text">Alat yang digunakan bersih dan terawat, tersedia camera yang terhubung ke monitor</p>
+                        </div>
+                        <div className="photo-item">
+                            <img src="/image2.jpg" alt="Photo 2" className="photo" />
+                            <p className="photo-text">Sikat gigi yang menggunakan pasta alami dapat menjaga kesehatan gigi</p>
+                        </div>
+                        <div className="photo-item">
+                            <img src="/image3.jpg" alt="Photo 3" className="photo" />
+                            <p className="photo-text">Kontrol rutin 6 bulan sekali dapat mengurangi resiko tumbuhnya karang gigi</p>
+                        </div>
+                    </div>
                     <div className="row">
                         <ServiceCard 
                             title="Orthodontics" 
@@ -38,3 +52,35 @@ function App() {
 }
 
 export default App;
+
+const styles = `
+.photo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo {
+    width: 500px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-text {
+    flex: 1;
+    text-align: center; /* Center align text vertically */
+}
+`;
+
+// Add styles to the document
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = styles;
+document.head.appendChild(styleSheet);
