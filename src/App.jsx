@@ -9,10 +9,10 @@ function App() {
         <div>
             <Header />
                 <div className="container my-5">
-                    <div className="p-5 mb-4 bg-light rounded-3 shadow-sm">
+                    <div className="p-5 mb-4 bg-primary text-white rounded-3 shadow-sm">
                         <div className="container-fluid py-5">
                             <h1 className="display-5 fw-bold">Selamat Datang di Website Tri Dental Care Sidoarjo</h1>
-                            <p className="col-md-12 fs-4">Melayani perapian gigi menggunakan behel sehat dan tidak menyebabkan gangguan pada mulut</p>
+                            <p className="col-md-12 fs-4">Melayani perapian gigi menggunakan behel sehat dan ditangani dengan dokter spesialis.</p>
                         </div>
                     </div>
                     <div className="photo-grid mb-4">
