@@ -51,6 +51,21 @@ function App() {
                             description="From routine check-ups to advanced dental procedures, we offer a wide range of services to keep your family's smiles healthy." 
                         />
                     </div>
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-md-6">
+                            <div className="card mb-4 bg-primary text-white shadow-sm">
+                                <div className="card-body text-center">
+                                    <h5 className="card-title">Jadwal Operasional Klinik</h5>
+                                    <p className="card-text">Senin - Jumat : 10.00 - 21.00 Wib</p>
+                                    <p className="card-text">Sabtu : 10.00 - 18.00 Wib</p>
+                                    <p className="card-text">Minggu/hari libur : Tutup</p>
+                                </div>
+                                <div className="bg-black text-white text-center shadow-sm">
+                                    <p className="card-text">Instagram : @tri.dentalcare | Email : info.tridentalcare@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             <Footer />    
         </div>
