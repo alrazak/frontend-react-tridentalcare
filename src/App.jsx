@@ -31,24 +31,24 @@ function App() {
                     </div>
                     <div className="row">
                         <ServiceCard 
-                            title="Orthodontics" 
-                            text="Straighten your teeth with our orthodontic services." 
-                            description="We offer traditional braces, Invisalign, and other orthodontic treatments to help you achieve a perfect smile." 
+                            title="drg. TRI JULIANTI, Sp.Ort" 
+                            text="SPESIALIS ORTODENTIS" 
+                            description="Dokter spesialis perapian gigi, melayani segala bentuk gigi untuk dirapikan menggunakn metode behel damon, behel lotus, dan behel konvensional. buka praktek selasa & kamis, sabtu dengan perjanjian." 
                         />
                         <ServiceCard 
-                            title="Teeth Whitening" 
-                            text="Get a bright smile with our teeth whitening treatments." 
-                            description="Our safe and effective teeth whitening treatments can give you a brighter, more confident smile." 
+                            title="drg. R.R PUSPITA SARI.M" 
+                            text="SPESIALIS KONSERVASI GIGI" 
+                            description="Dokter spesialis saraf gigi, perawatan saluran akar gigi, perawatan bertujuan untuk menyelamatkan gigi yang seharusnya memerlukan pencabutan. buka praktek senin sd kamis" 
                         />
                         <ServiceCard 
-                            title="Dental Implants" 
-                            text="Replace missing teeth with durable dental implants." 
-                            description="Our dental implants are designed to look and function like your natural teeth, providing a long-term solution for missing teeth." 
+                            title="drg. FLORETTA C.D,Sp.Ort" 
+                            text="SPESIALIS ORTODENTIS" 
+                            description="Dokter spesialis perapian gigi, melayani segala bentuk gigi tidak rapi untuk dilakukan perawatan menggunakan behel sesuai jenis kondisi gigi. buka praktek selasa sd kamis" 
                         />
                         <ServiceCard 
-                            title="General Dentistry" 
-                            text="Comprehensive dental care for the entire family." 
-                            description="From routine check-ups to advanced dental procedures, we offer a wide range of services to keep your family's smiles healthy." 
+                            title="drg. VIVIE JUWITA" 
+                            text="SPESIALIS KONVERVASI GIGI" 
+                            description="Dokter spesialis perawatan gigi, scalling karang gigi, dan perawatan tambal gigi berlubang untuk menyelamatkan gigi yang seharusnya memerlukan pencabutan. buka praktek senin, jumat, sabtu." 
                         />
                     </div>
                     <div className="row d-flex justify-content-center">
