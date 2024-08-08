@@ -15,7 +15,7 @@ function App() {
                             <p className="col-md-12 fs-4">Melayani perapian gigi menggunakan behel sehat dan ditangani dengan dokter spesialis.</p>
                         </div>
                     </div>
-                    <div className="photo-grid mb-4">
+                    <div className="container-fluid bg-primary rounded-3 text-white photo-grid py-4 mb-4">
                         <div className="photo-item">
                             <img src="/image1.jpg" alt="Photo 1" className="photo" />
                             <p className="photo-text">Alat yang digunakan bersih dan terawat, tersedia camera yang terhubung ke monitor</p>
