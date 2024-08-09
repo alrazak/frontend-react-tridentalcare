@@ -1,23 +1,17 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
-function Header() {
-  return (
-    <>
-      <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-          <Navbar.Brand href="#home">Tri Dental Care</Navbar.Brand>
-        </Container>
-      </Navbar>
-    </>
-  );
+function Header () {
+    return (
+        <div id="about">
+            <div className="p-5 mb-4 bg-primary text-white rounded-3 shadow-sm">
+                <div className="container-fluid py-5">
+                    <h1 className="display-5 fw-bold">Selamat Datang di Website Tri Dental Care Sidoarjo</h1>
+                    <p className="col-md-12 fs-4">Melayani perapian gigi menggunakan behel sehat dan ditangani dengan dokter spesialis.</p>
+                </div>
+            </div>
+            
+        </div>
+    );
 }
 
 export default Header;
