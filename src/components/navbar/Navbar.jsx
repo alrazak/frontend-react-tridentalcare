@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function CustomNavbar() {
   return (
     <div>
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar bg="primary" data-bs-theme="dark" className="fixed-navbar">
         <Container>
           <Navbar.Brand href="#home" className="text-white">Tri Dental Care</Navbar.Brand>
           <Nav className="ms-auto">

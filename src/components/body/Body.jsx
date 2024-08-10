@@ -27,38 +27,52 @@ function Body() {
 
 const styles = {
     container: {
-        backgroundColor: "#007bff", // Warna bg-primary
+        backgroundColor: "#007bff", // Warna latar belakang biru
         borderRadius: "10px",
         color: "white",
         padding: "2rem",
         marginBottom: "1.5rem",
+        marginTop: "4rem",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
     },
     photoItem: {
         display: "flex",
         alignItems: "center",
         marginBottom: "30px",
+        width: "100%",
+        maxWidth: "900px",
+        flexDirection: "row", // Gambar di kiri, teks di kanan
+        justifyContent: "center",
+        padding: "0 20px",
     },
     photoItemReverse: {
         display: "flex",
         alignItems: "center",
         marginBottom: "30px",
-        justifyContent: "flex-end", // Mengatur gambar tetap di kanan dan teks di kiri
-        textAlign: "left", // Mengatur teks tetap rata kiri
+        width: "100%",
+        maxWidth: "900px",
+        flexDirection: "row-reverse", // Gambar di kanan, teks di kiri
+        justifyContent: "center",
+        padding: "0 20px",
+        textAlign: "left", // Teks rata kiri
     },
     photo: {
-        width: "450px", // Lebar gambar yang lebih besar
+        width: "100%",
+        maxWidth: "500px", // Ukuran gambar yang lebih besar
         height: "auto",
         objectFit: "cover",
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        margin: "0 20px", // Jarak di kanan dan kiri gambar
     },
     photoText: {
-        fontSize: "3rem",
-        padding: "10px 15px",
+        fontSize: "2rem", // Ukuran font yang lebih besar
+        padding: "15px 20px",
         flex: 1,
-        marginLeft: "20px", // Jarak antara gambar dan teks
-        marginRight: "20px", // Jarak antara gambar dan teks
-        textAlign: "center", // Rata tengah untuk teks
+        margin: "0 20px", // Jarak antara gambar dan teks
+        textAlign: "center", // Teks rata tengah
     },
 }
 
