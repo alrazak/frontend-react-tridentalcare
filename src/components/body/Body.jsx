@@ -27,7 +27,7 @@ function Body() {
 
 const styles = {
     container: {
-        backgroundColor: "#007bff", // Warna latar belakang biru
+        backgroundColor: "#007bff",
         borderRadius: "10px",
         color: "white",
         padding: "2rem",
@@ -43,7 +43,7 @@ const styles = {
         marginBottom: "30px",
         width: "100%",
         maxWidth: "900px",
-        flexDirection: "row", // Gambar di kiri, teks di kanan
+        flexDirection: "row",
         justifyContent: "center",
         padding: "0 20px",
     },
@@ -53,35 +53,47 @@ const styles = {
         marginBottom: "30px",
         width: "100%",
         maxWidth: "900px",
-        flexDirection: "row-reverse", // Gambar di kanan, teks di kiri
+        flexDirection: "row-reverse",
         justifyContent: "center",
         padding: "0 20px",
-        textAlign: "left", // Teks rata kiri
+        textAlign: "left",
     },
     photo: {
         width: "100%",
-        maxWidth: "500px", // Ukuran gambar yang lebih besar
+        maxWidth: "500px",
         height: "auto",
         objectFit: "cover",
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-        margin: "0 20px", // Jarak di kanan dan kiri gambar
+        margin: "0 20px",
     },
     photoText: {
-        fontSize: "2rem", // Ukuran font yang lebih besar
+        fontSize: "2rem",
         padding: "15px 20px",
         flex: 1,
-        margin: "0 20px", // Jarak antara gambar dan teks
-        textAlign: "center", // Teks rata tengah
+        margin: "0 20px",
+        textAlign: "center",
     },
-}
-
-export default Body;
-
-
+};
 
 // Add styles to the document
 const styleSheet = document.createElement("style");
 styleSheet.type = "text/css";
-styleSheet.innerText = styles;
+styleSheet.innerText = `
+    @media (max-width: 768px) {
+        .photoItem, .photoItemReverse {
+            flex-direction: column;
+            text-align: center;
+        }
+        .photoText {
+            font-size: 1.5rem;
+        }
+        .photo {
+            max-width: 100%;
+            margin: 0 0 15px 0;
+        }
+    }
+`;
 document.head.appendChild(styleSheet);
+
+export default Body;
