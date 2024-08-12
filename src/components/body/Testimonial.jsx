@@ -40,6 +40,8 @@ const Testimoni = () => {
         .testimoni {
           padding: 2rem;
           background-color: #EEEDEB;
+          padding-top: 5rem;
+          padding-bottom: 7rem;
         }
 
         .testimoni h3 {
