@@ -1,6 +1,6 @@
 import React from "react";
 
-function Body() {
+function DentalComponent() {
     return (
         <div style={styles.container}>
             <div style={styles.photoItem}>
@@ -28,14 +28,13 @@ function Body() {
 const styles = {
     container: {
         backgroundColor: "#007bff",
-        borderRadius: "10px",
         color: "white",
-        padding: "2rem",
-        marginBottom: "1.5rem",
+        padding: "5rem",
         marginTop: "4rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        boxSizing: 'border-box',
     },
     photoItem: {
         display: "flex",
@@ -46,6 +45,7 @@ const styles = {
         flexDirection: "row",
         justifyContent: "center",
         padding: "0 20px",
+        boxSizing: 'border-box',
     },
     photoItemReverse: {
         display: "flex",
@@ -57,6 +57,7 @@ const styles = {
         justifyContent: "center",
         padding: "0 20px",
         textAlign: "left",
+        boxSizing: 'border-box',
     },
     photo: {
         width: "100%",
@@ -66,6 +67,7 @@ const styles = {
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         margin: "0 20px",
+        boxSizing: 'border-box',
     },
     photoText: {
         fontSize: "2rem",
@@ -73,27 +75,9 @@ const styles = {
         flex: 1,
         margin: "0 20px",
         textAlign: "center",
+        boxSizing: 'border-box',
     },
 };
 
-// Add styles to the document
-const styleSheet = document.createElement("style");
-styleSheet.type = "text/css";
-styleSheet.innerText = `
-    @media (max-width: 768px) {
-        .photoItem, .photoItemReverse {
-            flex-direction: column;
-            text-align: center;
-        }
-        .photoText {
-            font-size: 1.5rem;
-        }
-        .photo {
-            max-width: 100%;
-            margin: 0 0 15px 0;
-        }
-    }
-`;
-document.head.appendChild(styleSheet);
+export default DentalComponent;
 
-export default Body;
