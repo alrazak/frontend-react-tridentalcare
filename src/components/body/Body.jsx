@@ -1,83 +1,77 @@
-import React from "react";
+import React from 'react';
 
-function DentalComponent() {
+function MainComponent() {
     return (
-        <div style={styles.container}>
-            <div style={styles.photoItem}>
-                <img src="/image1.jpg" alt="Photo 1" style={styles.photo} />
-                <p style={styles.photoText}>
-                    Alat yang digunakan bersih dan terawat, tersedia camera yang terhubung ke monitor
-                </p>
+        <div>
+            <div className="container">
+                <div className="photoItem">
+                    <img src="/image1.jpg" alt="Photo 1" className="photo" />
+                    <div className="info">
+                        <h2 className="title">Alat Berkualitas</h2>
+                        <p className="description">
+                            Alat yang digunakan bersih dan terawat, tersedia camera yang terhubung ke monitor.
+                        </p>
+                    </div>
+                </div>
+                <div className="photoItem reverse">
+                    <div className="info">
+                        <h2 className="title">Sikat Gigi Berkualitas</h2>
+                        <p className="description">
+                            Sikat gigi yang menggunakan pasta alami dapat menjaga kesehatan gigi.
+                        </p>
+                    </div>
+                    <img src="/image2.jpg" alt="Photo 2" className="photo" />
+                </div>
+                <div className="photoItem">
+                    <img src="/image3.jpg" alt="Photo 3" className="photo" />
+                    <div className="info">
+                        <h2 className="title">Kontrol Rutin</h2>
+                        <p className="description">
+                            Kontrol rutin 6 bulan sekali dapat mengurangi risiko tumbuhnya karang gigi.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div style={styles.photoItemReverse}>
-                <p style={styles.photoText}>
-                    Sikat gigi yang menggunakan pasta alami dapat menjaga kesehatan gigi
-                </p>
-                <img src="/image2.jpg" alt="Photo 2" style={styles.photo} />
-            </div>
-            <div style={styles.photoItem}>
-                <img src="/image3.jpg" alt="Photo 3" style={styles.photo} />
-                <p style={styles.photoText}>
-                    Kontrol rutin 6 bulan sekali dapat mengurangi resiko tumbuhnya karang gigi
-                </p>
-            </div>
+
+            <style jsx>{`
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px;
+                }
+                .photoItem {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 10px;
+                    background-color: #f9f9f9;
+                }
+                .photoItem.reverse {
+                    flex-direction: row-reverse;
+                }
+                .photo {
+                    max-width: 300px;
+                    height: auto;
+                    border-radius: 8px;
+                }
+                .info {
+                    max-width: 500px;
+                }
+                .title {
+                    font-size: 18px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+                .description {
+                    font-size: 16px;
+                    color: #666;
+                }
+            `}</style>
         </div>
     );
 }
 
-const styles = {
-    container: {
-        backgroundColor: "#007bff",
-        color: "white",
-        padding: "5rem",
-        marginTop: "4rem",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        boxSizing: 'border-box',
-    },
-    photoItem: {
-        display: "flex",
-        alignItems: "center",
-        marginBottom: "30px",
-        width: "100%",
-        maxWidth: "900px",
-        flexDirection: "row",
-        justifyContent: "center",
-        padding: "0 20px",
-        boxSizing: 'border-box',
-    },
-    photoItemReverse: {
-        display: "flex",
-        alignItems: "center",
-        marginBottom: "30px",
-        width: "100%",
-        maxWidth: "900px",
-        flexDirection: "row-reverse",
-        justifyContent: "center",
-        padding: "0 20px",
-        textAlign: "left",
-        boxSizing: 'border-box',
-    },
-    photo: {
-        width: "100%",
-        maxWidth: "500px",
-        height: "auto",
-        objectFit: "cover",
-        borderRadius: "10px",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-        margin: "0 20px",
-        boxSizing: 'border-box',
-    },
-    photoText: {
-        fontSize: "2rem",
-        padding: "15px 20px",
-        flex: 1,
-        margin: "0 20px",
-        textAlign: "center",
-        boxSizing: 'border-box',
-    },
-};
-
-export default DentalComponent;
-
+export default MainComponent;
