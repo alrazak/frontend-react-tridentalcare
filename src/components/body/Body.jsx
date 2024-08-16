@@ -53,7 +53,7 @@ function MainComponent() {
                     flex-direction: row-reverse;
                 }
                 .photo {
-                    max-width: 300px;
+                    max-width: 500px;
                     height: auto;
                     border-radius: 8px;
                 }
