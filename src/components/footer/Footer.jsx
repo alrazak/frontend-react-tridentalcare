@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer className="bg-primary text-white py-1 mt-auto">
-            <div className="container text-center">
-                <p className="mb-0">© 2024 Tri Dental Care. All rights reserved.</p>
+        <footer>
+            <div className="card-footer bg-primary py-2 text-white text-center">
+                <p className="card-text">&copy; 2024 Tri Dental Care. All rights reserved.</p>
             </div>
         </footer>
     );
