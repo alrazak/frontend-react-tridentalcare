@@ -1,42 +1,54 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
 function CustomNavbar() {
   return (
-    <Navbar bg="primary" variant="dark" style={styles.navbar} expand="lg">
-      <Container>
-        <Navbar.Brand href="#home" style={styles.navbarBrand}>Tri Dental Care</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" style={styles.navbarCollapse}>
-          <Nav>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#register">Register</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav style={styles.navbar}>
+      <div style={styles.navbarBrand}>
+        <a href="#home" style={styles.brandLink}>Tri Dental Care</a>
+      </div>
+      <ul style={styles.navLinks}>
+        <li style={styles.navItem}><a href="#about" style={styles.navLink}>About</a></li>
+        <li style={styles.navItem}><a href="#contact" style={styles.navLink}>Contact</a></li>
+        <li style={styles.navItem}><a href="#register" style={styles.navLink}>Register</a></li>
+      </ul>
+    </nav>
   );
 }
 
-// Styling definitions
 const styles = {
   navbar: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '10px 20px',
+    backgroundColor: '#007bff',
+    color: '#fff',
     position: 'fixed',
     width: '100%',
     top: 0,
-    left: 0,
     zIndex: 1000,
   },
   navbarBrand: {
-    flex: 1,
-    textAlign: 'left', // Aligns text to the left
+    fontSize: '1.5em',
+    fontWeight: 'bold',
   },
-  navbarCollapse: {
+  brandLink: {
+    color: '#fff',
+    textDecoration: 'none',
+  },
+  navLinks: {
     display: 'flex',
-    justifyContent: 'flex-end',
+    listStyle: 'none',
+    margin: 0,
+    padding: 0,
+  },
+  navItem: {
+    marginLeft: '20px',
+  },
+  navLink: {
+    color: '#fff',
+    textDecoration: 'none',
+    fontSize: '1em',
   },
 };
 
