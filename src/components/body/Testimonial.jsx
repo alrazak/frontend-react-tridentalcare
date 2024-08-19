@@ -20,7 +20,7 @@ const Testimoni = () => {
   ];
 
   return (
-    <section className="testimoni">
+    <section id="testimonial" className="testimoni">
       <h3>Testimoni Pelanggan</h3>
       <div className="testimoni-container">
         {testimonials.map((testimoni, index) => (
