@@ -8,6 +8,7 @@ function CustomNavbar() {
       </div>
       <ul style={styles.navLinks}>
         <li style={styles.navItem}><a href="#about" style={styles.navLink}>About</a></li>
+        <li style={styles.navItem}><a href="#testimonial" style={styles.navLink}>Testimoni</a></li>
         <li style={styles.navItem}><a href="#contact" style={styles.navLink}>Contact</a></li>
         <li style={styles.navItem}><a href="#register" style={styles.navLink}>Register</a></li>
       </ul>
