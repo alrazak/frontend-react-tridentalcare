@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Contact() {
     return (
-        <div id="contact" className="bg-dark text-center py-5">
-            <h3 className="text-white font-weight-bold mb-4">Jadwal Operasional Klinik</h3>
+        <div id="contact" style={{ backgroundColor: "#ddd" }} className="text-center py-5">
+            <h3 className="font-weight-bold mb-4">Jadwal Operasional Klinik</h3>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-8">
