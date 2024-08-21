@@ -38,7 +38,7 @@ function MainComponent() {
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
-                    padding: 20px;
+                    padding: 20px 10%;
                 }
                 .photoItem {
                     display: flex;
@@ -61,13 +61,15 @@ function MainComponent() {
                     max-width: 500px;
                 }
                 .title {
-                    font-size: 18px;
+                    font-size: 2rem;
                     color: #333;
                     margin-bottom: 10px;
+                    text-align: center;
                 }
                 .description {
-                    font-size: 16px;
+                    font-size: 2rem;
                     color: #666;
+                    text-align: center;
                 }
             `}</style>
         </div>
