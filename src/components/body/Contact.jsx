@@ -3,19 +3,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Contact() {
     return (
-        <div id="contact" style={{ backgroundColor: "#ddd" }} className="text-center py-5">
+        <div id="contact" className="contact-section text-center py-5">
             <h3 className="font-weight-bold mb-4">Jadwal Operasional Klinik</h3>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-8">
-                        <div className="card mb-5 bg-primary text-white">
-                            <div className="card-body bg-white text-dark text-center">
+                        <div className="card mb-5 custom-card">
+                            <div className="card-body custom-card-body">
                                 <p className="card-text">Senin - Jumat: 10.00 - 21.00 WIB</p>
                                 <p className="card-text">Sabtu: 10.00 - 18.00 WIB</p>
                                 <p className="card-text">Minggu/hari libur: Tutup</p>
                             </div>
-                            <div className="card-footer bg-primary text-white text-center">
-                                <p className="card-text">Instagram: @tri.dentalcare | Email: info.tridentalcare@gmail.com</p>
+                            <div className="card-footer custom-card-footer">
+                                <p className="card-text">Instagram : @tri.dentalcare | Email : info.tridentalcare@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -24,5 +24,32 @@ function Contact() {
         </div>
     );
 }
+
+// CSS
+const styles = `
+    .contact-section {
+        background-color: #ddd;
+    }
+
+    .custom-card {
+        background-color: #007bff;
+        border-color: white;
+    }
+
+    .custom-card-body {
+        background-color: white;
+        color: #333;
+
+    .custom-card-footer {
+        background-color: black;
+        color: white;
+    }
+`;
+
+// Menyisipkan CSS ke dalam dokumen
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = styles;
+document.head.appendChild(styleSheet);
 
 export default Contact;
