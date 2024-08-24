@@ -3,7 +3,7 @@ import React from 'react';
 function MainComponent() {
     return (
         <div>
-            <div className="container">
+            <div className="container-body">
                 <div className="photoItem">
                     <img src="/image1.jpg" alt="Photo 1" className="photo" />
                     <div className="info">
@@ -13,7 +13,7 @@ function MainComponent() {
                         </p>
                     </div>
                 </div>
-                <div className="photoItem reverse">
+                <div className="photoItem">
                     <div className="info">
                         <h2 className="title">Sikat Gigi Berkualitas</h2>
                         <p className="description">
@@ -34,23 +34,21 @@ function MainComponent() {
             </div>
 
             <style jsx>{`
-                .container {
+                .container-body {
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
                     padding: 20px 10%;
+                    margin: 50px;
                 }
                 .photoItem {
                     display: flex;
                     align-items: center;
                     gap: 20px;
-                    border: 1px solid #ddd;
+                    border: 1px;
                     border-radius: 8px;
                     padding: 10px;
-                    background-color: #f9f9f9;
-                }
-                .photoItem.reverse {
-                    flex-direction: row-reverse;
+                    background-color: #EEEDEB;
                 }
                 .photo {
                     max-width: 500px;
@@ -61,7 +59,7 @@ function MainComponent() {
                     max-width: 500px;
                 }
                 .title {
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                     color: #333;
                     margin-bottom: 10px;
                     text-align: center;
@@ -70,6 +68,42 @@ function MainComponent() {
                     font-size: 2rem;
                     color: #666;
                     text-align: center;
+                }
+
+                /* Responsive Design */
+                @media (max-width: 768px) {
+                    .container {
+                        padding: 10px 5%;
+                    }
+                    .photoItem {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                    .photoItem.reverse {
+                        flex-direction: column;
+                    }
+                    .photo {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                    .info {
+                        max-width: 100%;
+                    }
+                    .title {
+                        font-size: 1.5rem;
+                    }
+                    .description {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .title {
+                        font-size: 1.2rem;
+                    }
+                    .description {
+                        font-size: 1rem;
+                    }
                 }
             `}</style>
         </div>
