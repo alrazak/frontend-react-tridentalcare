@@ -1,57 +1,50 @@
 import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 
 function CustomNavbar() {
   return (
-    <nav style={styles.navbar}>
-      <div style={styles.navbarBrand}>
-        <a href="#home" style={styles.brandLink}>Tri Dental Care</a>
-      </div>
-      <ul style={styles.navLinks}>
-        <li style={styles.navItem}><a href="#about" style={styles.navLink}>About</a></li>
-        <li style={styles.navItem}><a href="#testimonial" style={styles.navLink}>Testimoni</a></li>
-        <li style={styles.navItem}><a href="#contact" style={styles.navLink}>Contact</a></li>
-        <li style={styles.navItem}><a href="#register" style={styles.navLink}>Register</a></li>
-      </ul>
-    </nav>
+    <>
+      <Navbar className="navbar-custom" expand="lg" fixed="top">
+        <Navbar.Brand href="#home">Tri Dental Care</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto nav-items">
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#testimonial">Testimoni</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#register">Register</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
+      <style jsx>{`
+        .navbar-custom {
+          background-color: #007bff !important;
+          padding: 0 10%;
+        }
+
+        .navbar-custom .navbar-brand {
+          font-size: 1.5em;
+          font-weight: bold;
+          color: #fff !important;
+        }
+
+        .navbar-custom .nav-items {
+          margin-left: auto;
+          margin-right: 0;
+        }
+
+        .navbar-custom .nav-link {
+          font-size: 1em;
+          color: #fff !important;
+        }
+
+        .navbar-custom .nav-link:hover {
+          color: #ddd !important;
+        }
+      `}</style>
+    </>
   );
 }
-
-const styles = {
-  navbar: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '10px 10%',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    position: 'fixed',
-    width: '100%',
-    top: 0,
-    zIndex: 1000,
-    boxSizing: 'border-box',
-  },
-  navbarBrand: {
-    fontSize: '1.5em',
-    fontWeight: 'bold',
-  },
-  brandLink: {
-    color: '#fff',
-    textDecoration: 'none',
-  },
-  navLinks: {
-    display: 'flex',
-    listStyle: 'none',
-    margin: 0,
-    padding: 0,
-  },
-  navItem: {
-    marginLeft: '20px',
-  },
-  navLink: {
-    color: '#fff',
-    textDecoration: 'none',
-    fontSize: '1em',
-  },
-};
 
 export default CustomNavbar;
