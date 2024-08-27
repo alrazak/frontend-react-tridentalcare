@@ -39,9 +39,10 @@ const styles = `
     .custom-card-body {
         background-color: white;
         color: #333;
+    }
 
     .custom-card-footer {
-        background-color: black;
+        background-color: #007bff;
         color: white;
     }
 `;
