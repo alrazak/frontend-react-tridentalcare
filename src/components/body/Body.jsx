@@ -4,6 +4,7 @@ function MainComponent() {
     return (
         <div>
             <div className="container-body">
+                <h3 className="font-weight-bold mb-4">Fasilitas Memadai</h3>
                 <div className="photoItem">
                     <img src="/image1.jpg" alt="Photo 1" className="photo" />
                     <div className="info">
@@ -40,6 +41,11 @@ function MainComponent() {
                     gap: 20px;
                     padding: 20px 10%;
                     margin: 50px;
+                }                   
+                .container-body h3 {
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                    font-weight: bold;
                 }
                 .photoItem {
                     display: flex;
