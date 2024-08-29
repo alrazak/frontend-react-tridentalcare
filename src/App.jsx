@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import CustomCard from "./components/header/subheader/Card";
-import Footer from "./components/footer/Footer";
-import Contact from "./components/body/Contact";
 import Body from "./components/body/Body";
 import Testimoni from "./components/body/Testimonial";
+import Question from "./components/body/Question";
+import Contact from "./components/body/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             </Routes>
             <Body />
             <Testimoni />
+            <Question />
             <Contact />
             <Footer />
         </div>
