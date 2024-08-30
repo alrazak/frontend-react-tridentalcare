@@ -39,9 +39,10 @@ const styles = `
 
     .title-question {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         font-size: 24px;
         color: #333;
+        font-weight: bold;
     }
 
     .container-faq {
