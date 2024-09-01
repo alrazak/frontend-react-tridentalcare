@@ -14,16 +14,17 @@ function CustomCard() {
       <div id="about" className="about">
         <div className="container p-5 bg-white text-black shadow-sm">
           <div className="container-fluid py-5">
-            <p className="col-md-12 fs-4">
-              Klinik kami menawarkan layanan perapian gigi yang menggunakan behel yang dirancang untuk menjaga kesehatan mulut dan gigi Anda. Proses perawatan ini dilakukan oleh dokter spesialis yang memiliki keahlian khusus di bidang ortodonti, sehingga Anda dapat merasa aman dan yakin bahwa perawatan dilakukan dengan standar tertinggi. Selain itu, kami juga dilengkapi dengan fasilitas yang memadai untuk menunjang kenyamanan dan efektivitas perawatan. Semua peralatan yang digunakan selalu disterilkan sesuai dengan prosedur medis, guna memastikan kebersihan dan mencegah infeksi. Dengan komitmen kami terhadap kualitas dan keselamatan, kami berupaya memberikan perawatan behel gigi terbaik yang dapat meningkatkan kesehatan dan penampilan gigi Anda.
+            <p className="col-md-12 fs-4" style={{ textIndent: '1.5em', lineHeight: '1.6' }}>
+              Klinik kami menyediakan layanan perapian gigi dengan behel, dikerjakan oleh dokter ortodonti berpengalaman. Kami memastikan perawatan berkualitas dengan fasilitas yang nyaman dan alat yang selalu disterilkan. Komitmen kami adalah memberikan perawatan yang aman dan efektif untuk meningkatkan kesehatan dan penampilan gigi Anda.
             </p>
             <br />
-            <p className="col-md-12 fs-4">
-              Klinik kami dipimpin oleh tim dokter spesialis yang berpengalaman di bidang ortodonti, memastikan bahwa setiap pasien menerima perawatan yang tepat dan berkualitas tinggi. Dengan pengetahuan dan keahlian yang mendalam, dokter spesialis kami mampu menangani berbagai kebutuhan perapian gigi, dari kasus yang sederhana hingga yang lebih kompleks. Pendekatan yang digunakan selalu disesuaikan dengan kondisi unik setiap pasien, sehingga hasil yang diperoleh tidak hanya estetis, tetapi juga fungsional. Kepercayaan dan kepuasan pasien adalah prioritas kami, dan itulah mengapa setiap langkah perawatan dilakukan dengan penuh perhatian dan presisi oleh dokter-dokter yang telah terlatih dan tersertifikasi di bidangnya.
+            <p className="col-md-12 fs-4" style={{ textIndent: '1.5em', lineHeight: '1.6' }}>
+              Tim dokter spesialis kami memberikan perawatan ortodonti yang tepat, mulai dari kasus sederhana hingga kompleks. Setiap perawatan disesuaikan dengan kebutuhan unik pasien, memastikan hasil yang estetis dan fungsional. Kepercayaan pasien adalah prioritas utama kami.
             </p>
           </div>
         </div>
       </div>
+
 
       <Container className="mt-5">
         <h3 className="fw-bold text-center mb-3">Dokter Spesialis</h3>
