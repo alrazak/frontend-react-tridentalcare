@@ -36,9 +36,8 @@ function CustomCard() {
                 <Card.Text>SPESIALIS ORTODENTIS</Card.Text>
                 <hr />
                 <Card.Text>
-                  Dokter spesialis perapian gigi, melayani segala bentuk gigi untuk dirapikan menggunakan metode behel damon, behel lotus, dan behel konvensional. buka praktek selasa & kamis, sabtu dengan perjanjian.
+                  Dokter spesialis perapian gigi, melayani segala bentuk gigi seperti gingsul untuk dirapikan menggunakan metode behel damon, behel lotus, dan behel konvensional. <br /> <b> buka praktek selasa & kamis. </b>
                 </Card.Text>
-                <Button variant="primary">Selengkapnya..</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -49,9 +48,8 @@ function CustomCard() {
                 <Card.Text>SPESIALIS KONSERVASI GIGI</Card.Text>
                 <hr />
                 <Card.Text>
-                  Dokter spesialis saraf gigi, perawatan saluran akar gigi, perawatan bertujuan untuk menyelamatkan gigi yang seharusnya memerlukan pencabutan. buka praktek senin sd kamis.
+                  Dokter spesialis saraf gigi, perawatan saluran akar gigi, perawatan bertujuan untuk menyelamatkan gigi yang seharusnya memerlukan pencabutan menjadi terawat. <br /> <b> buka praktek setiap hari senin sd kamis. </b>
                 </Card.Text>
-                <Button variant="primary">Selengkapnya..</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -62,9 +60,8 @@ function CustomCard() {
                 <Card.Text>SPESIALIS ORTODENTIS</Card.Text>
                 <hr />
                 <Card.Text>
-                  Dokter spesialis perapian gigi, melayani segala bentuk gigi tidak rapi untuk dilakukan perawatan menggunakan behel sesuai jenis kondisi gigi. buka praktek mulai selasa sd kamis.
+                  Dokter spesialis perapian gigi, melayani segala bentuk gigi tidak rapi seperti gingsul untuk dilakukan perawatan menggunakan behel sesuai jenis kondisi gigi. <br /> <b> buka praktek mulai selasa sd kamis. </b>
                 </Card.Text>
-                <Button variant="primary">Selengkapnya..</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -72,14 +69,15 @@ function CustomCard() {
             <Card>
               <Card.Body>
                 <Card.Title>drg. VIVIE JUWITA</Card.Title>
+                <br />
                 <Card.Text>SPESIALIS KONVERVASI GIGI</Card.Text>
                 <hr />
                 <Card.Text>
-                  Dokter spesialis perawatan gigi, scalling karang gigi, dan perawatan tambal gigi berlubang untuk menyelamatkan gigi yang seharusnya memerlukan pencabutan. buka praktek senin, jumat, sabtu.
+                  Dokter spesialis perawatan gigi, scalling karang gigi, dan perawatan tambal gigi berlubang untuk menyelamatkan gigi yang seharusnya memerlukan pencabutan. <br /> <b> buka praktek senin, jumat, sabtu. </b>
                 </Card.Text>
-                <Button variant="primary">Selengkapnya..</Button>
               </Card.Body>
             </Card>
+            <br />
           </Col>
           <Button variant="primary" onClick={() => navigate('/')}>Kembali ke Home</Button>
         </Row>
