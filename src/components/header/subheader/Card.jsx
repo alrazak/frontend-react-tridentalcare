@@ -12,8 +12,10 @@ function CustomCard() {
   return (
     <>
       <div id="about" className="about">
-        <div className="container p-5 bg-white text-black shadow-sm">
-          <div className="container-fluid py-5">
+        <div className="container p-5 bg-white text-black shadow-sm"> 
+          <div className="container-fluid py-3">
+            <h3 className="title-card text-center">Tri Dental Care</h3>
+            <br />
             <p className="col-md-12 fs-4" style={{ textIndent: '1.5em', lineHeight: '1.6' }}>
               Klinik kami menyediakan layanan perapian gigi dengan behel, dikerjakan oleh dokter ortodonti berpengalaman. Kami memastikan perawatan berkualitas dengan fasilitas yang nyaman dan alat yang selalu disterilkan. Komitmen kami adalah memberikan perawatan yang aman dan efektif untuk meningkatkan kesehatan dan penampilan gigi Anda.
             </p>
