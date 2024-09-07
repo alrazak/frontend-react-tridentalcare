@@ -80,7 +80,7 @@ function Question() {
 
 const styles = `
     .container-question {
-        margin: 20px auto;
+        margin: 5% auto;
         max-width: 800px;
         padding: 20px;
         border-radius: 8px;
