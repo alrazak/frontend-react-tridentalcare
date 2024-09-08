@@ -20,7 +20,9 @@ function CustomNavbar() {
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
             >
-              <Nav.Link href="#register">Register</Nav.Link>
+              <Nav.Link href="#register">
+                Register <span className="arrow-down">▼</span>
+              </Nav.Link>
               {isHovering && (
                 <div className="dropdown-menu">
                   <Nav.Link href="#buat-akun">Buat Akun</Nav.Link>
@@ -83,6 +85,11 @@ function CustomNavbar() {
 
         .dropdown-menu .nav-link:hover {
           color: #ddd;
+        }
+
+        .arrow-down {
+          font-size: 0.7em;
+          margin-left: 5px;
         }
       `}</style>
     </>
