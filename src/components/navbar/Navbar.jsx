@@ -11,8 +11,9 @@ function CustomNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto nav-items">
-            <Nav.Link href="#about">Tentang Kami</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#testimonial">Testimoni</Nav.Link>
+            <Nav.Link href="#blog">Blog</Nav.Link>
             <Nav.Link href="#contact">Hubungi Kami</Nav.Link>
             {/* Menu Register dengan dropdown */}
             <div
