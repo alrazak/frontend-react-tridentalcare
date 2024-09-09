@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
     return (
-        <div id="about" className="about">
+        <div id="home" className="about">
             <div className="container p-5 bg-white text-black shadow-sm">
                 <div className="container-fluid py-5">
                     <h1 className="display-5 fw-bold">Selamat Datang di Website Tri Dental Care Sidoarjo</h1>
