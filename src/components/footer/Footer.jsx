@@ -25,19 +25,20 @@ function Footer() {
                     {/* Tautan Sosial Media */}
                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="mb-4 font-weight-bold">Ikuti Kami</h5>
-                        <a href="#" className="text-white me-4">
-                            <i className="fab fa-facebook fa-2x"></i>
+                        <a href="https://www.facebook.com" target="_blank" className="text-white d-block mb-3">
+                            <i className="fab fa-facebook fa-2x"></i> Facebook
                         </a>
-                        <a href="#" className="text-white me-4">
-                            <i className="fab fa-twitter fa-2x"></i>
+                        <a href="https://www.twitter.com" target="_blank" className="text-white d-block mb-3">
+                            <i className="fab fa-twitter fa-2x"></i> X
                         </a>
-                        <a href="#" className="text-white me-4">
-                            <i className="fab fa-instagram fa-2x"></i>
+                        <a href="https://www.instagram.com" target="_blank" className="text-white d-block mb-3">
+                            <i className="fab fa-instagram fa-2x"></i> Instagram
                         </a>
-                        <a href="#" className="text-white">
-                            <i className="fab fa-linkedin fa-2x"></i>
+                        <a href="https://www.linkedin.com" target="_blank" className="text-white d-block">
+                            <i className="fab fa-linkedin fa-2x"></i> LinkedIn
                         </a>
                     </div>
+
 
                     {/* Kontak dan Informasi */}
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
