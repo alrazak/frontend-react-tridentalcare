@@ -16,29 +16,28 @@ function Footer() {
                     {/* Tautan Menu */}
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="mb-4 font-weight-bold text-decoration-underline">Tautan Cepat</h5>
-                        <p><a href="#" className="text-white" style={{ textDecoration: "none" }}>Beranda</a></p>
-                        <p><a href="#" className="text-white" style={{ textDecoration: "none" }}>Tentang Kami</a></p>
-                        <p><a href="#" className="text-white" style={{ textDecoration: "none" }}>Layanan</a></p>
-                        <p><a href="#" className="text-white" style={{ textDecoration: "none" }}>Kontak</a></p>
+                        <p><a href="#" className="text-white text-decoration-none">Beranda</a></p>
+                        <p><a href="#" className="text-white text-decoration-none">Tentang Kami</a></p>
+                        <p><a href="#" className="text-white text-decoration-none">Layanan</a></p>
+                        <p><a href="#" className="text-white text-decoration-none">Kontak</a></p>
                     </div>
 
                     {/* Tautan Sosial Media */}
                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="mb-4 font-weight-bold text-decoration-underline">Ikuti Kami</h5>
-                        <a href="https://www.facebook.com" target="_blank" className="text-white d-block mb-3" style={{ textDecoration: "none" }}>
+                        <a href="https://www.facebook.com" target="_blank" className="social-link d-block mb-3">
                             <i className="fab fa-facebook fa-2x"></i> Facebook
                         </a>
-                        <a href="https://www.twitter.com" target="_blank" className="text-white d-block mb-3" style={{ textDecoration: "none" }}>
+                        <a href="https://www.twitter.com" target="_blank" className="social-link d-block mb-3">
                             <i className="fab fa-twitter fa-2x"></i> X
                         </a>
-                        <a href="https://www.instagram.com" target="_blank" className="text-white d-block mb-3" style={{ textDecoration: "none" }}>
+                        <a href="https://www.instagram.com" target="_blank" className="social-link d-block mb-3">
                             <i className="fab fa-instagram fa-2x"></i> Instagram
                         </a>
-                        <a href="https://www.linkedin.com" target="_blank" className="text-white d-block mb-3" style={{ textDecoration: "none" }}>
+                        <a href="https://www.linkedin.com" target="_blank" className="social-link d-block mb-3">
                             <i className="fab fa-linkedin fa-2x"></i> LinkedIn
                         </a>
                     </div>
-
 
                     {/* Kontak dan Informasi */}
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -56,6 +55,19 @@ function Footer() {
                     <p className="card-text">&copy; 2024 Tri Dental Care. All rights reserved.</p>
                 </div>
             </div>
+
+            {/* CSS di dalam JSX */}
+            <style jsx>{`
+                .social-link {
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.3s;
+                }
+
+                .social-link:hover {
+                    color: #ddd; /* Ubah warna sesuai keinginan */
+                }
+            `}</style>
         </footer>
     );
 }
