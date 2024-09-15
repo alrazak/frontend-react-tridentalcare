@@ -16,10 +16,10 @@ function Footer() {
                     {/* Tautan Menu */}
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="mb-4 font-weight-bold text-decoration-underline">Tautan Cepat</h5>
-                        <p><a href="#" className="text-white text-decoration-none">Beranda</a></p>
-                        <p><a href="#" className="text-white text-decoration-none">Tentang Kami</a></p>
-                        <p><a href="#" className="text-white text-decoration-none">Layanan</a></p>
-                        <p><a href="#" className="text-white text-decoration-none">Kontak</a></p>
+                        <p><a href="#" className="link-page text-white text-decoration-none">Beranda</a></p>
+                        <p><a href="#" className="link-page text-white text-decoration-none">Tentang Kami</a></p>
+                        <p><a href="#" className="link-page text-white text-decoration-none">Layanan</a></p>
+                        <p><a href="#" className="link-page text-white text-decoration-none">Kontak</a></p>
                     </div>
 
                     {/* Tautan Sosial Media */}
@@ -65,7 +65,17 @@ function Footer() {
                 }
 
                 .social-link:hover {
-                    color: #ddd; /* Ubah warna sesuai keinginan */
+                    color: #ddd;
+                }
+
+                .link-page {
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.3s;
+                }
+
+                .link-page:hover {
+                    color: #ddd !important; /* Gunakan !important untuk memastikan gaya diterapkan */
                 }
             `}</style>
         </footer>
