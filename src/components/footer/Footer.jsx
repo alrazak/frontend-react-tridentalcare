@@ -44,7 +44,7 @@ function Footer() {
                         <h5 className="mb-4 font-weight-bold">Info Kontak</h5>
                         <p><i className="fas fa-home mr-3"></i> Jl. Mojopahit No.96, Setelah RSUD Sidoarjo</p>
                         <p><i className="fas fa-envelope mr-3"></i> info@tridentalcare.com</p>
-                        <p><i className="fas fa-phone mr-3"></i> + 123 456 7890</p>
+                        <p><i className="fas fa-phone mr-3"></i> +6281 2345 6789</p>
                     </div>
                 </div>
 
