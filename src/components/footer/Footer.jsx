@@ -75,7 +75,7 @@ function Footer() {
                 }
 
                 .link-page:hover {
-                    color: #ddd !important; /* Gunakan !important untuk memastikan gaya diterapkan */
+                    color: #ddd !important;
                 }
             `}</style>
         </footer>
