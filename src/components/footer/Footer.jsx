@@ -77,6 +77,74 @@ function Footer() {
                 .link-page:hover {
                     color: #ddd !important;
                 }
+
+                /* Media Query untuk layar kecil */
+                @media (max-width: 768px) {
+                    .container {
+                        padding: 0 15px;
+                    }
+
+                    .row {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .col-md-4, .col-md-3, .col-md-2 {
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
+                    h5 {
+                        margin-bottom: 10px;
+                    }
+
+                    .social-link i {
+                        margin-right: 10px;
+                    }
+
+                    .social-link, .link-page {
+                        font-size: 1rem;
+                    }
+
+                    .card-text {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                /* Media Query untuk layar sangat kecil */
+                @media (max-width: 480px) {
+                    .container {
+                        padding: 0 10px;
+                    }
+
+                    .row {
+                        flex-direction: column;
+                    }
+
+                    h5 {
+                        font-size: 1.2rem;
+                        margin-bottom: 8px;
+                    }
+
+                    .social-link i {
+                        margin-right: 5px;
+                    }
+
+                    .link-page, p {
+                        font-size: 0.9rem;
+                    }
+
+                    .card-text {
+                        font-size: 0.8rem;
+                    }
+
+                    /* Penambahan margin antara elemen */
+                    .social-link, .link-page, p {
+                        margin-bottom: 10px;
+                    }
+                }
             `}</style>
         </footer>
     );
