@@ -61,11 +61,12 @@ function Footer() {
                 .social-link {
                     text-decoration: none;
                     color: white;
-                    transition: color 0.3s;
+                    transition: color 0.3s, transform 0.3s;
                 }
 
                 .social-link:hover {
                     color: #ddd;
+                    transform: scale(1.1);
                 }
 
                 .link-page {
