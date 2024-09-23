@@ -9,17 +9,18 @@ function Footer() {
                     <div className="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
                         <h5 className="mb-4 font-weight-bold">Tri Dental Care</h5>
                         <p>
-                            Klinik perawatan gigi terpercaya Anda. Memberikan pelayanan dan perawatan terbaik untuk kesehatan gigi Anda.
+                            Klinik perawatan gigi terpercaya Anda. <br />
+                            Memberikan pelayanan dan perawatan <br /> terbaik untuk kesehatan gigi Anda.
                         </p>
                     </div>
 
                     {/* Tautan Menu */}
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h5 className="mb-4 font-weight-bold">Tautan Cepat</h5>
-                        <p><a href="#" className="link-page text-white text-decoration-none">Beranda</a></p>
-                        <p><a href="#" className="link-page text-white text-decoration-none">Tentang Kami</a></p>
-                        <p><a href="#" className="link-page text-white text-decoration-none">Layanan</a></p>
-                        <p><a href="#" className="link-page text-white text-decoration-none">Kontak</a></p>
+                        <p><a href="#" className="link-page">Beranda</a></p>
+                        <p><a href="#" className="link-page">Tentang Kami</a></p>
+                        <p><a href="#" className="link-page">Layanan</a></p>
+                        <p><a href="#" className="link-page">Kontak</a></p>
                     </div>
 
                     {/* Tautan Sosial Media */}
@@ -42,7 +43,7 @@ function Footer() {
                     {/* Kontak dan Informasi */}
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h5 className="mb-4 font-weight-bold">Info Kontak</h5>
-                        <p><i className="fas fa-home mr-3"></i> Jl. Mojopahit No.96, Setelah RSUD Sidoarjo</p>
+                        <p><i className="fas fa-home mr-3"></i> Jl. Mojopahit No.96, <br /> Setelah RSUD Sidoarjo</p>
                         <p><i className="fas fa-envelope mr-3"></i> info@tridentalcare.com</p>
                         <p><i className="fas fa-phone mr-3"></i> 08123456789</p>
                     </div>
@@ -76,7 +77,7 @@ function Footer() {
                 }
 
                 .link-page:hover {
-                    color: #ddd !important;
+                    color: #ddd;
                 }
 
                 /* Media Query untuk layar kecil */
@@ -141,7 +142,6 @@ function Footer() {
                         font-size: 0.8rem;
                     }
 
-                    /* Penambahan margin antara elemen */
                     .social-link, .link-page, p {
                         margin-bottom: 10px;
                     }
