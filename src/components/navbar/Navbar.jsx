@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
 function CustomNavbar() {
-  const [isHovering, setIsHovering] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
   return (
     <>
@@ -16,15 +18,11 @@ function CustomNavbar() {
             <Nav.Link href="#blog">Blog</Nav.Link>
             <Nav.Link href="#contact">Hubungi Kami</Nav.Link>
             {/* Menu Register dengan dropdown */}
-            <div
-              className="nav-link-dropdown"
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
-            >
-              <Nav.Link href="#register">
-                Register <span className="arrow-down">▼</span>
+            <div className="nav-link-dropdown">
+              <Nav.Link onClick={toggleDropdown}>
+                Register <span className="arrow">{isDropdownOpen ? '▲' : '▼'}</span>
               </Nav.Link>
-              {isHovering && (
+              {isDropdownOpen && (
                 <div className="dropdown-menu">
                   <Nav.Link href="#buat-akun">Buat Akun</Nav.Link>
                   <Nav.Link href="#login">Login</Nav.Link>
@@ -88,9 +86,11 @@ function CustomNavbar() {
           color: #ddd;
         }
 
-        .arrow-down {
+        .arrow {
           font-size: 0.7em;
           margin-left: 5px;
+          color: white;
+          transition: transform 0.3s;
         }
       `}</style>
     </>
